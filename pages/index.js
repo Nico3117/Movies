@@ -2,6 +2,7 @@ import axios from "axios";
 import { server } from "../config";
 import PopularMovie from "../components/PopularMovie";
 import Image from 'next/image';
+import SearchMovies from "../components/Search";
 
 export default function Home({ movies }) {
   console.log(movies)
@@ -13,6 +14,9 @@ export default function Home({ movies }) {
         </div>
         <h1 className='text-2xl text-gray-700 uppercase font-bold'>Bienvenue sur Movies</h1>
         <p className='text-gray-500'>Retrouver les films qui vous ont marqué !</p>
+      </div>
+      <div className="container max-w-7xl mx-auto pb-10 px-4 text-center">
+        <SearchMovies />
       </div>
       <PopularMovie movies={movies.results} />
     </div>
