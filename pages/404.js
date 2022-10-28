@@ -7,9 +7,9 @@ const NotFound = () => {
       <h6 className="text-5xl font-bold text-gray-600">
         <span className="text-red-500">Oops!</span> Page not found
       </h6>
-      <p className="text-gray-500 mt-3">La page que vous recherchez n'existe pas.</p>
+      <p className="text-gray-500 mt-3">La page que vous recherchez n&apos;existe pas.</p>
       <Link href="/" className='mt-5'>
-        <span className="bg-blue-100 text-blue-800 font-semibold px-6 py-2 text-sm">Revenir à la page d'accueil</span>
+        <span className="bg-blue-100 text-blue-800 font-semibold px-6 py-2 text-sm">Revenir à la page d&apos;accueil</span>
       </Link>
     </div>
   )
