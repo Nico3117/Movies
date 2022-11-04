@@ -1,0 +1,9 @@
+{
+    "name": "Movies",
+    "short_name": "Movies",
+    "theme_color": "#374151",
+    "background_color": "#374151",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/"
+  }

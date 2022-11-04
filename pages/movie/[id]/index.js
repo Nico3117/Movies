@@ -3,7 +3,6 @@ import { server } from "../../../config/index";
 import Image from 'next/image';
 
 const Movie = ({ movie }) => {
-    console.log(movie)
   return (
     <div className="container max-w-4xl mx-auto pt-6"> 
         <div className="px-3">
