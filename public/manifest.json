@@ -1,11 +1,13 @@
 {
     "name": "Movies",
+    "description": "PWA Movies app build with Nextjs and deploy with vercel.",
+    "lang": "fr",
+    "dir": "ltr",
     "short_name": "Movies",
     "theme_color": "#374151",
     "background_color": "#374151",
     "display": "standalone",
-    "scope": "/",
-    "start_url": "/",
+    "start_url": "https://movies-chi-five.vercel.app/",
     "icons": [
         {
           "src": "/logo-movie.png",
