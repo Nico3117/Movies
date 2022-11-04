@@ -11,7 +11,7 @@ export default function Home({ movies }) {
       <Head>
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#374151" />
-        <link rel="apple-touch-icon" href="/logo-96x96.png" />
+        <link rel="apple-touch-icon" href="/maskable_icon_x96.png" />
         <meta name="apple-mobile-web-app-status-bar" content="#90cdf4" />
         <meta name="description" content="Mobile web app with nextjs"></meta>
         <title>Movies PWA</title>
