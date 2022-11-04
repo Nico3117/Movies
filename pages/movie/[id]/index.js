@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Movie = ({ movie }) => {
   return (
-    <div className="container max-w-4xl mx-auto pt-6"> 
+    <div className="container max-w-4xl mx-auto py-6"> 
         <div className="px-3">
             <Image src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`} alt={`${movie.title}`} width={1000} height={600} className="rounded-md" />
             <h1 className="font-bold text-xl my-2">{movie.title}</h1>

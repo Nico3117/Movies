@@ -5,7 +5,6 @@ export default function SearchMovies() {
 
     const [query, setQuery] = useState("");
     const [movies, setMovies] = useState([]);
-    const test = 2;
 
     const searchMovies = async (e) => { 
         e.preventDefault()
@@ -28,8 +27,8 @@ export default function SearchMovies() {
             <form onSubmit={searchMovies}>
                 <input 
                     type="text" 
-                    className="rounded-md bg-gray-100 mt-5 p-2" 
-                    placeholder="Entrez votre texte"
+                    className="rounded-md bg-gray-100 p-2" 
+                    placeholder="Saisissez un film"
                     value={query} 
                     onChange={(e) => setQuery(e.target.value)}></input>
                 <button className="ml-2 bg-blue-600 text-white p-2 rounded-md" type="submit">
@@ -37,10 +36,9 @@ export default function SearchMovies() {
                 </button>
             </form>
             
-            <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mt-5">
+            <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mt-10">
                 {movies.filter(movie => movie.poster_path).map((movie) => (<MovieCard movie={movie} key={movie.id} />))}
             </div>
-    
         </>
     )
 }
